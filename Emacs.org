@@ -1,0 +1,19 @@
+#+title: Emacs
+
+* Doom Emacs
+
+** 安装和配置
+- doom install/upgrade/doctor
+
+** 基本操作
+- SPC . find file
+
+* 基本应用
+** 工程管理-projectile
+- 通过猜测目录是工程，或者手动增加.projectile文件作为识别
+- projectile-discover-project-in-dir
+- SPC SPC 在当前工程中寻找文件
+- SPC f p 直接进入doom配置工程
+- SPC o p treemacs project sidebar
+- SPC f r recent files
+- SPC f R recently visited files
