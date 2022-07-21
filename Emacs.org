@@ -83,6 +83,17 @@ git@github.com:<myUserName>/newRepose.git
 3. 在 magit status page，按 M a 添加远程仓库，提示的第一个窗口输入 origin，第二个窗口粘贴创库 ssh 链接
 4. 最后通过 P p 进行提交
 ref:[[https://emacs-china.org/t/magit-push-magit-push-current-to-pushremote-argus/20560/5][magit中的push操作方法是什么？magit-push-current-to-pushremote函数中argus参数该如何输入？]]
+** Deft
+Deft is an Emacs mode for quickly browsing, filtering, and editing directories of plain text notes.
+- configuration
+  #+begin_src elisp
+(setq deft-directory "~/Notes/"
+      deft-extensions '("txt" "org")
+      deft-recursive t)
+  #+end_src
+- SPC n d open deft
+- C-c deft search mode
+
 
 * 中英文等高等宽字体设置
 根据[[https://emacs-china.org/t/topic/20158][大家的中英文对齐都是用的啥字体？]]换成思源宋体加 Fira Code。感觉很好！之前一直想解决的问题是 Org-mode 下表格中英文混排不对齐的问题，通过 [[https://github.com/casouri/valign/blob/master/README-CN.org][valign]] 包可以解决这个问题。在其他地方中英文混排对不对齐不重要，好看才重要。更纱黑体能保证中文英文混排自然等高等宽，但是看上去会很难受，因此弃用。
