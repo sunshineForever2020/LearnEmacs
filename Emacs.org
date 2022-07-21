@@ -116,9 +116,14 @@ A plain-text personal knoledge management system.
  - SPC n r i insert node
  - SPC n r r
  - #+roam_alias
-
-
-
+** Custom keybindings
+- configuration
+  #+begin_src elisp
+(map! :leader
+      (:prefix "a" . "applications")
+      :desc "Export Org to HTML"
+      "e" #'org-html-export-to-html)
+  #+end_src
 
 
 * 中英文等高等宽字体设置
