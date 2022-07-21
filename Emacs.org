@@ -1,7 +1,6 @@
 #+title: Emacs
 
 * Doom Emacs
-
 ** 安装和配置
 - doom install/upgrade/doctor
 
@@ -57,23 +56,69 @@
 - M-D M-D,
 - C-n C-p
 ** Magit
+版本记录，大的修改返回键。学习如何提交到 remote server github，如何 push，pull。
+- Magit is a UI to Git.
+- SPC g g show status page
+- ? git hint
+- git status --short
+- s stage
+- u unstage
+- c c commit
+- b s branch spin-off
+- t t create a tag
+- M remote reposity
+- P magit-push
+
+*** Github 工作流
+1. 在 Github 创建一个空的仓库，并复制链接
+   #+begin_src shell
+    git@github.com:<myUserName>/newRepose.git
+   #+end_src
+2. 在本地 SPC g g 进入 magit status page，提示创建新仓库，yes 并commit
+3. 在 magit status page，按 M a 添加远程仓库，提示的第一个窗口输入 origin，第二个窗口粘贴创库 ssh 链接
+4. 最后通过 P p 进行提交
+
+
+
+  
+
+
+
+
+
+
+
 
 * 中英文等高等宽字体设置
-根据[[https://emacs-china.org/t/topic/20158][大家的中英文对齐都是用的啥字体？]]换成思源宋体加 Fira Code。感觉很好！
+根据[[https://emacs-china.org/t/topic/20158][大家的中英文对齐都是用的啥字体？]]换成思源宋体加 Fira Code。感觉很好！之前一直想解决的问题是 Org-mode 下表格中英文混排不对齐的问题，通过 [[https://github.com/casouri/valign/blob/master/README-CN.org][valign]] 包可以解决这个问题。在其他地方中英文混排对不对齐不重要，好看才重要。更纱黑体能保证中文英文混排自然等高等宽，但是看上去会很难受，因此弃用。
 
-** 字体中的一些简称
+中英文间增加空格更好，增加美观度。搜狗输入法可以设置这个选项。
+
+中英文排版 English 是更好的吗？搜狗中通过设置 S-Command-E 可以直接设置为英文输入法 I am English input in Sougou, yes! good use!
+
+三种输入法模式切换，中文-ABC-英文，中文 Right Shift ABC， 中文 Shift-Command-E 英文，英文 Shift-Command-E ABC.
+
+用 Vim 时，正常模式一般是中文输入法，需要 Right Shift 来切换 ABC 进入 Normal mode.
+**  字体知识
+基本要素：字体，字号（Pt），字形（常规，斜体，粗体），自重（粗细，W1-W9），字体族（Serif，Sans-serif，Monospace，Cursive，Fantasy，衬线-无衬线-等宽-手写-梦幻，打印-页面-代码-图片）
+
+ref: [[ http://www.ayqy.net/blog/serif，sans-serif，monospace，cursive和fantasy/][serif，sans-serif，monospace，cursive和fantasy]]
+
+*** 一些简称
 | SC(Simplify Chinese)     | 简体中文      |
 | TC(Tranditional Chinese) | 繁体中文      |
 | J(Japanese)              | 日文         |
 | HC(Hongkong Chinese)     | 香港中文      |
 | CL(Cyrillic & Latin)     | 西里尔 & 拉丁 |
-| Mono                     |             |
-| Sans                     |             |
-| Serif                    |             |
-| Regular                  |             |
-| ExtraLight               |             |
-| Light                    |             |
-| Medium                   |             |
-| SemiBold                 |             |
-| Bold                     |             |
-| Heavy                    |             |
+| Mono                     | 等宽         |
+| Sans-Serif               | 无衬线       |
+| Serif                    | 衬线         |
+| Regular                  | 常规         |
+| ExtraLight               | 超细         |
+| Light                    | 细           |
+| Medium                   | 中粗         |
+| SemiBold                 | 半黑体       |
+| Bold                     | 黑体         |
+| Heavy                    | 重黑         |
+
+valign 包可以解决 Org 模式中表格不对齐问题！
