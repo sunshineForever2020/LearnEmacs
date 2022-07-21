@@ -93,6 +93,19 @@ Deft is an Emacs mode for quickly browsing, filtering, and editing directories o
   #+end_src
 - SPC n d open deft
 - C-c deft search mode
+** Org-journal
+记录每天什么时间做了什么事情，形成日报。
+- (org +journal)
+- configuration
+  #+begin_src elisp
+(setq org-journal-date-prefix "#+TITLE: "
+      org-journal-time-prefix "* "
+      org-journal-date-format "%a, %Y-%m-%d"
+      org-journal-file-format "%Y-%m-%d.org")
+  #+end_src
+- SPC n j j create new journal entires
+- SPC j j create another entry in journal file
+
 
 
 * 中英文等高等宽字体设置
