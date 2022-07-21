@@ -105,6 +105,19 @@ Deft is an Emacs mode for quickly browsing, filtering, and editing directories o
   #+end_src
 - SPC n j j create new journal entires
 - SPC j j create another entry in journal file
+** Org-roam
+A plain-text personal knoledge management system.
+ - (org +roam)
+ - configuration
+   #+begin_src elisp
+(setq org-roam-directory "~/Roam")
+   #+end_src
+ - SPC n r n capture to node
+ - SPC n r i insert node
+ - SPC n r r
+ - #+roam_alias
+
+
 
 
 
