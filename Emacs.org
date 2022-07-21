@@ -17,3 +17,63 @@
 - SPC o p treemacs project sidebar
 - SPC f r recent files
 - SPC f R recently visited files
+** Dired
+- S-9 hidden detail
+- CR Enter dir/file
+- - last level
+- S-= create dir
+- d mark delete
+- x execute
+- o sorted by name/date
+- M chmod
+- O change owner
+- u unmark
+- U all unmark
+- C copy
+- R move
+- i 插入模式重命名
+** Buffers, Windows, and Basic Navigation
+- SPC b b switch workspace buffer
+- SPC b B switch all workspace buffer
+- SPC , shortcut
+- SPC S , shortcut
+- SPC b k kill buffer
+- SPC b N new empty buffer
+- SPC p s save project file
+- SPC w w
+- SPC w v
+- SPC w s
+- SPC w q quit window
+- SPC w < resize
+- SPC w > resize
+- SPC w hjkl
+** install package
+- (package! package-name)
+- (def-package! ...)
+- (use-package ...)
+** moving around the screen with Avy
+** Multiple cursor in Emacs with evil-multiedit
+- M-d M-d,
+- M-D M-D,
+- C-n C-p
+** Magit
+
+* 中英文等高等宽字体设置
+根据[[https://emacs-china.org/t/topic/20158][大家的中英文对齐都是用的啥字体？]]换成思源宋体加 Fira Code。感觉很好！
+
+** 字体中的一些简称
+| SC(Simplify Chinese)     | 简体中文      |
+| TC(Tranditional Chinese) | 繁体中文      |
+| J(Japanese)              | 日文         |
+| HC(Hongkong Chinese)     | 香港中文      |
+| CL(Cyrillic & Latin)     | 西里尔 & 拉丁 |
+| Mono                     |             |
+| Sans                     |             |
+| Serif                    |             |
+| Regular                  |             |
+| ExtraLight               |             |
+| Light                    |             |
+| Medium                   |             |
+| SemiBold                 |             |
+| Bold                     |             |
+| Heavy                    |             |
